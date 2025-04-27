@@ -63,3 +63,9 @@ BTN_SHOW_MORE.addEventListener("click", () => {
     page++
     searchImage();
 })
+
+// Quando a página terminar de carregar, anima o formulário
+window.addEventListener('load', () => {
+    const form = document.querySelector("#search-form");
+    form.classList.add('form-loaded');
+});
